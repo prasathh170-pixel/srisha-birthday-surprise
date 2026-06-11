@@ -9,26 +9,42 @@
 </head>
 
 <body>
-    <h1>🎈 Hey Srisha! 🎈</h1>
-    <h2>I Have a Birthday Surprise For You 🎁</h2>
+    <div id="lock-screen" aria-live="polite">
+        <h1>🎉 Coming Soon 🎉</h1>
+        <p id="lock-message">The website will open on June 19 at 12:00 AM.</p>
+        <p id="countdown">Loading countdown...</p>
+        <p id="lock-current-time">Loading current date and time...</p>
+    </div>
 
-    <button id="surpriseBtn">Click Here ✨</button>
+    <div id="main-content" class="hidden">
+        <h1>🎈 Hey Srisha! 🎈</h1>
+        <h2>I Have a Birthday Surprise For You 🎁</h2>
+        <button id="surpriseBtn" type="button" aria-controls="wish-card" aria-expanded="false">Click Here ✨</button>
 
-    <div id="wish-card" aria-hidden="true">
-        <h1>🎉 Happy Birthday Srisha 🎂</h1>
+        <div id="wish-card" aria-hidden="true">
+            <h1>🎉 Happy Birthday Srisha 🎂</h1>
 
-        <p>Dear Srisha,</p>
+            <p>Dear Srisha,</p>
 
-        <p>Wishing you a day filled with happiness, laughter, love, and unforgettable memories.</p>
+            <p>Wishing you a day filled with happiness, laughter, love, and unforgettable memories.</p>
 
-        <p>May every moment of your life bring you success, peace, and endless joy.</p>
+            <p>May every moment of your life bring you success, peace, and endless joy.</p>
 
-        <p>Thank you for being such a wonderful friend. Your kindness, positivity, and beautiful smile make every day brighter.</p>
+            <p>Thank you for being such a wonderful friend. Your kindness, positivity, and beautiful smile make every day brighter.</p>
 
-        <p>May all your dreams come true and may this year bring you countless reasons to smile.</p>
+            <p>May all your dreams come true and may this year bring you countless reasons to smile.</p>
 
-        <h2>🎁 Enjoy Your Special Day 🎁</h2>
-        <h3>💖 Happy Birthday, Srisha! 💖</h3>
+            <h2>🎁 Enjoy Your Special Day 🎁</h2>
+            <h3>💖 Happy Birthday, Srisha! 💖</h3>
+
+            <div id="gallery">
+                <div class="gallery-container">
+                    <img src="image1.jpg" alt="Srisha photo 1" class="gallery-img" />
+                    <img src="image2.jpg" alt="Srisha photo 2" class="gallery-img" />
+                    <img src="image3.jpg" alt="Srisha photo 3" class="gallery-img" />
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
